@@ -10,13 +10,13 @@
 			<legend>Dados do Livro</legend>
 			<h:panelGrid columns="2">
 				<h:outputLabel value="Titulo: " for="titulo" />
-				<h:inputText id="titulo" />
+				<h:inputText id="titulo" value="#{livroBean.titulo}" />
 				<h:outputLabel value="ISBN: " for="isbn" />
-				<h:inputText id="isbn" />
+				<h:inputText id="isbn" value="#{livroBean.ISBN}" />
 				<h:outputLabel value="Preço: " for="preco" />
-				<h:inputText id="preco" />
-				<h:outputLabel value="Data de lançamento" for="datalancamento" />
-				<h:inputText id="datalancamento" />
+				<h:inputText id="preco" value="#{livroBean.preco}"/>
+				<h:outputLabel value="Data de lançamento" for="dataLancamento" />
+				<h:inputText id="dataLancamento" value="#{livroBean.dataLancamento}" />
 				<h:commandButton value="gravar" action="#{livroBean.gravarLivro}" />
 			</h:panelGrid>
 		</fieldset>
