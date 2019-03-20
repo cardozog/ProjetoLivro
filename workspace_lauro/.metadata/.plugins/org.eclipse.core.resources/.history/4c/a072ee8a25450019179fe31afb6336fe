@@ -1,0 +1,5 @@
+package br.com.bg.livraria02rafael.modelo;
+
+public class Autor {
+
+}
